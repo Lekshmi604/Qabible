@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-20T20:50:35 IST" name="MyTestSuite" finished-at="2023-09-20T20:50:47 IST" duration-ms="11791">
+    <groups>
+    </groups>
+    <test started-at="2023-09-20T20:50:35 IST" name="ChromeBrowser" finished-at="2023-09-20T20:50:47 IST" duration-ms="11791">
+      <class name="testCases.ClientTestCases">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.ClientTestCases@36fc695d]" started-at="2023-09-20T20:50:35 IST" name="beforeMethod" finished-at="2023-09-20T20:50:44 IST" duration-ms="8438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTextOfSearch()[pri:0, instance:testCases.ClientTestCases@36fc695d]" started-at="2023-09-20T20:50:44 IST" name="verifyTextOfSearch" finished-at="2023-09-20T20:50:47 IST" duration-ms="3070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTextOfSearch -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.ClientTestCases@36fc695d]" started-at="2023-09-20T20:50:47 IST" name="afterMethod" finished-at="2023-09-20T20:50:47 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ClientTestCases -->
+    </test> <!-- ChromeBrowser -->
+  </suite> <!-- MyTestSuite -->
+</testng-results>

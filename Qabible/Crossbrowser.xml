@@ -1,0 +1,17 @@
+<suite name="MyTestSuite">
+	<test name="ChromeBrowser">
+		<parameter name="browser" value="Chrome"></parameter>
+		
+		<classes>
+			<class name="testCases.ClientTestCases"></class>
+			
+		</classes>
+	</test>
+	<!--<test name="EdgeBrowser">
+			<parameter name="browser" value="Edge"></parameter>
+			<classes>
+				<class name="testCases.LoginTestCases"></class>
+			</classes>
+
+	</test>!-->
+</suite>

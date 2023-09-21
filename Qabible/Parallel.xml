@@ -1,0 +1,17 @@
+<suite name="MyTestSuite" paralel="test" thread-count="2">
+	<test name="Cross Browser">
+		<parameter name="browser" value="Chrome"></parameter>
+		
+		<classes>
+			<class name="testCases.LoginTestCases"></class>
+			
+		</classes>
+	</test>
+	<test name="EdgeBrowser">
+			<parameter name="browser" value="Edge"></parameter>
+			<classes>
+				<class name="testCases.LoginTestCases"></class>
+			</classes>
+
+	</test>
+</suite>
