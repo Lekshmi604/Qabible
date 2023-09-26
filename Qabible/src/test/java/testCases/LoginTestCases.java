@@ -9,7 +9,7 @@ import elementRepositry.HomePage;
 import elementRepositry.LoginPage;
 
 public class LoginTestCases extends BaseClass{
-  @Test
+  @Test(retryAnalyzer = listener.Retry.class)
   public void login() {
 	  LoginPage l = new LoginPage(driver);
 		l.inputUserName("carol");

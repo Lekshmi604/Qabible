@@ -31,7 +31,7 @@ public class BaseClass {
 	}
 
 	
-  @BeforeMethod
+  @BeforeMethod(alwaysRun = true)
   @Parameters("browser")
   public void beforeMethod(String browserName) throws Exception {
 		testBase();
@@ -50,7 +50,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
   }
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void afterMethod(ITestResult iTestResult) throws Exception {// ITestResult=listener
 		if (iTestResult.getStatus() == iTestResult.FAILURE) {
 			SecreenshotCapture sc = new SecreenshotCapture();

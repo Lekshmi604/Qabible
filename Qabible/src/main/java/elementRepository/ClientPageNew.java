@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.GeneralUtility;
 
-public class ClientPage {
+public class ClientPageNew {
 	GeneralUtility gu = new GeneralUtility();
 
 	WebDriver driver;
 
-	public ClientPage(WebDriver driver) {
+	public ClientPageNew(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -23,6 +23,8 @@ public class ClientPage {
 	WebElement search;
 	@FindBy(tagName = "span")
 	WebElement titleView;
+	@FindBy(id="clientsearch-client_name")
+	WebElement clientName;
 
 	public void navigateToClientTab() {
 		client.click();
@@ -34,6 +36,10 @@ public class ClientPage {
 	}
 	public String verifyTheTitleOfView() {
 		return gu.getValueOfAttrivbuteTitle(titleView);		
+	}
+	public void enterClientName(String name) {
+		clientName.sendKeys(name);
+		
 	}
 
 }
